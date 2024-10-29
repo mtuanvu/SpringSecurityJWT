@@ -3,6 +3,7 @@ package com.authentication.springsecurity_jwt_roles_tokens_auth_login.controller
 import com.authentication.springsecurity_jwt_roles_tokens_auth_login.dto.RequestResponse;
 import com.authentication.springsecurity_jwt_roles_tokens_auth_login.entities.Product;
 import com.authentication.springsecurity_jwt_roles_tokens_auth_login.repository.ProductRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/api/v1/products")
 public class AdminUser {
+    @Autowired
     private ProductRepository productRepository;
 
     @GetMapping("/public/product")

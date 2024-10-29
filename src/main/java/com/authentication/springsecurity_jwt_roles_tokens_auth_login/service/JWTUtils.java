@@ -13,8 +13,6 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.function.Function;
 
-import static org.yaml.snakeyaml.tokens.Token.ID.Key;
-
 @Component
 public class JWTUtils {
 
